@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finalResultsFragment">
+
+    <ImageView
+        android:id="@+id/rteView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/rte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityText" />
+
+    <ImageView
+        android:id="@+id/kkView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/kk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rteView" />
+
+    <ImageView
+        android:id="@+id/miView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/mi"
+        app:layout_constraintEnd_toStartOf="@+id/soView"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="@+id/rteView"
+        app:layout_constraintTop_toBottomOf="@+id/rteVts" />
+
+    <ImageView
+        android:id="@+id/soView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/so"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/miView" />
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="City"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/miRatio"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/miView"
+        app:layout_constraintStart_toStartOf="@+id/miView"
+        app:layout_constraintTop_toBottomOf="@+id/miView" />
+
+    <TextView
+        android:id="@+id/rteRatio"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="60dp"
+        android:background="#FFC107"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/rteView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rteView" />
+
+    <TextView
+        android:id="@+id/rteVts"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:background="#FFC107"
+        android:text="%0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/rteRatio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rteRatio"
+        app:layout_constraintTop_toBottomOf="@+id/rteRatio" />
+
+    <TextView
+        android:id="@+id/kkRatio"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/kkView"
+        app:layout_constraintStart_toStartOf="@+id/kkView"
+        app:layout_constraintTop_toBottomOf="@+id/kkView" />
+
+    <TextView
+        android:id="@+id/kkVts"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:text="%0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/kkRatio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/kkRatio"
+        app:layout_constraintTop_toBottomOf="@+id/kkRatio" />
+
+    <TextView
+        android:id="@+id/miVts"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:text="%0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/miRatio"
+        app:layout_constraintStart_toStartOf="@+id/miRatio"
+        app:layout_constraintTop_toBottomOf="@+id/miRatio" />
+
+    <TextView
+        android:id="@+id/soRatio"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/soView"
+        app:layout_constraintStart_toStartOf="@+id/soView"
+        app:layout_constraintTop_toBottomOf="@+id/soView" />
+
+    <TextView
+        android:id="@+id/soVts"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:text="%0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gcVotes"
+        app:layout_constraintEnd_toEndOf="@+id/soRatio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/soRatio"
+        app:layout_constraintTop_toBottomOf="@+id/soRatio"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/gcVotes"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:background="#009688"
+        android:text="General Counted Votes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivFinal"
+        app:layout_constraintTop_toTopOf="@+id/ivFinal" />
+
+    <TextView
+        android:id="@+id/evFinal"
+        android:layout_width="102dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:background="#009688"
+        android:text="Empty Votes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miVts" />
+
+    <TextView
+        android:id="@+id/resEv"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        app:layout_constraintEnd_toStartOf="@+id/resIv"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/evFinal"
+        app:layout_constraintTop_toBottomOf="@+id/evFinal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/resIv"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/resEv"
+        app:layout_constraintEnd_toStartOf="@+id/gcVotes"
+        app:layout_constraintStart_toEndOf="@+id/evFinal"
+        app:layout_constraintTop_toBottomOf="@+id/ivFinal" />
+
+    <TextView
+        android:id="@+id/resGcv"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:background="#009688"
+        android:text="%0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/resIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/resIv"
+        app:layout_constraintTop_toBottomOf="@+id/gcVotes" />
+
+    <TextView
+        android:id="@+id/ivFinal"
+        android:layout_width="136dp"
+        android:layout_height="20dp"
+        android:background="#009688"
+        android:text="Invalid Votes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/evFinal"
+        app:layout_constraintTop_toTopOf="@+id/evFinal" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFinal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

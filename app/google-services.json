@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92763415477",
+    "project_id": "sandikapp-62b2c",
+    "storage_bucket": "sandikapp-62b2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92763415477:android:ed687928a2ba69be3feffc",
+        "android_client_info": {
+          "package_name": "com.yunusemreaydin.sandikapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92763415477-ghietkaceao2jt9iibrdvjt7vapm3j8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3CTR2MKOkLtWgx8T8YWbWRn9q_gnXe8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92763415477-ghietkaceao2jt9iibrdvjt7vapm3j8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

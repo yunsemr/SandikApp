@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dataFragment">
+
+    <Button
+        android:id="@+id/addVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Add Vote"
+        app:layout_constraintEnd_toStartOf="@+id/showResults"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv" />
+
+    <TextView
+        android:id="@+id/rte"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="35dp"
+        android:text="Recep Tayyip Erdoğan:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/citiesAdd" />
+
+    <TextView
+        android:id="@+id/iv"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:text="Invalid Vote:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ev"
+        app:layout_constraintTop_toBottomOf="@+id/ev" />
+
+    <TextView
+        android:id="@+id/mi"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:text="Muharrem İnce:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/rte"
+        app:layout_constraintTop_toBottomOf="@+id/rte" />
+
+    <TextView
+        android:id="@+id/so"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:text="Sinan Oğan"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/kk"
+        app:layout_constraintTop_toBottomOf="@+id/kk" />
+
+    <TextView
+        android:id="@+id/kk"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:text="Kemal Kılıçdaroğlu"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/mi"
+        app:layout_constraintTop_toBottomOf="@+id/mi" />
+
+    <TextView
+        android:id="@+id/ev"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:text="Empty Vote:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/so"
+        app:layout_constraintTop_toBottomOf="@+id/so" />
+
+    <EditText
+        android:id="@+id/voteOfErdogan"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="Add Vote"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/rte"
+        app:layout_constraintTop_toTopOf="@+id/rte" />
+
+    <EditText
+        android:id="@+id/voteOfInce"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="Add Vote"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/mi"
+        app:layout_constraintTop_toBottomOf="@+id/rte" />
+
+    <EditText
+        android:id="@+id/voteOfKilicdaroglu"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="Add Vote"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/kk"
+        app:layout_constraintTop_toBottomOf="@+id/mi" />
+
+    <EditText
+        android:id="@+id/emptyVote"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="Add Vote"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ev"
+        app:layout_constraintTop_toBottomOf="@+id/so" />
+
+    <EditText
+        android:id="@+id/invalidVote"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="Add Vote"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/iv"
+        app:layout_constraintTop_toTopOf="@+id/iv" />
+
+    <EditText
+        android:id="@+id/voteOfOgan"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="Add Vote"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/so"
+        app:layout_constraintTop_toTopOf="@+id/so" />
+
+    <Spinner
+        android:id="@+id/citiesAdd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showResults"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="10dp"
+        android:text="Show Results"
+        app:layout_constraintEnd_toEndOf="@+id/invalidVote"
+        app:layout_constraintTop_toTopOf="@+id/addVote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

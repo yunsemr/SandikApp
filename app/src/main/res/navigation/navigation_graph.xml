@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainPage2">
+    <fragment
+        android:id="@+id/clerkFragment2"
+        android:name="com.yunusemreaydin.sandikapp.clerkFragment"
+        android:label="fragment_clerk"
+        tools:layout="@layout/fragment_clerk" >
+        <action
+            android:id="@+id/action_clerkFragment2_to_dataFragment"
+            app:destination="@id/dataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/voterFragment3"
+        android:name="com.yunusemreaydin.sandikapp.voterFragment"
+        android:label="fragment_voter"
+        tools:layout="@layout/fragment_voter" >
+        <action
+            android:id="@+id/action_voterFragment3_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainPage2"
+        android:name="com.yunusemreaydin.sandikapp.MainPage"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPage2_to_clerkFragment2"
+            app:destination="@id/clerkFragment2" />
+        <action
+            android:id="@+id/action_mainPage2_to_voterFragment3"
+            app:destination="@id/voterFragment3" />
+        <action
+            android:id="@+id/action_mainPage2_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.yunusemreaydin.sandikapp.resultsFragment"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" >
+        <action
+            android:id="@+id/action_resultsFragment_to_finalResultsFragment2"
+            app:destination="@id/finalResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.yunusemreaydin.sandikapp.dataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" >
+        <action
+            android:id="@+id/action_dataFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalResultsFragment"
+        android:name="com.yunusemreaydin.sandikapp.finalResultsFragment"
+        android:label="fragment_final_results"
+        tools:layout="@layout/fragment_final_results" >
+        <action
+            android:id="@+id/action_finalResultsFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+</navigation>
